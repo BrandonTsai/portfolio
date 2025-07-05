@@ -6,7 +6,7 @@ export default function Header() {
     <header className="w-full border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-black sticky top-0 z-50">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         <Link href="/" className="font-bold text-lg tracking-tight">
-          Brandon's Portfolio
+          Brandon&#39;s Portfolio
         </Link>
         <a
           href="https://linkedin.com/in/your-linkedin"
