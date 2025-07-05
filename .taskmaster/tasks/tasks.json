@@ -1,0 +1,238 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Initialize Next.js Project with TypeScript and Tailwind CSS",
+        "description": "Set up the Next.js project foundation with TypeScript support, Tailwind CSS for styling, and essential development configurations",
+        "details": "Execute: npx create-next-app@latest portfolio-brandon --typescript --tailwind --app\nInstall additional dependencies: npm install lucide-react framer-motion\nConfigure tailwind.config.js with custom theme colors and responsive breakpoints\nSet up project structure: /app, /components, /lib, /public folders\nCreate .env.local for environment variables\nConfigure next.config.js for optimized images and performance",
+        "testStrategy": "Verify successful project initialization by running npm run dev and checking localhost:3000\nEnsure Tailwind CSS is working by adding test classes\nConfirm TypeScript compilation with npm run build",
+        "priority": "high",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Next.js project with TypeScript and Tailwind",
+            "description": "Initialize a new Next.js 14+ project using create-next-app with TypeScript and Tailwind CSS pre-configured, using the App Router architecture",
+            "dependencies": [],
+            "details": "Run 'npx create-next-app@latest portfolio-brandon --typescript --tailwind --app' and select the following options: Would you like to use ESLint? → Yes, Would you like to use `src/` directory? → No, Would you like to use experimental app/ directory? → Yes, Would you like to customize the default import alias? → No",
+            "status": "done",
+            "testStrategy": "Verify project creation by running 'npm run dev' and checking that the development server starts on http://localhost:3000"
+          },
+          {
+            "id": 2,
+            "title": "Install and configure additional dependencies",
+            "description": "Install lucide-react for icons and framer-motion for animations, ensuring compatibility with the Next.js App Router",
+            "dependencies": [],
+            "details": "Navigate to the project directory and run 'npm install lucide-react framer-motion'. Verify installation by checking package.json for the new dependencies. Create a components/providers.tsx file to wrap framer-motion components for client-side rendering compatibility",
+            "status": "done",
+            "testStrategy": "Create a simple test component using both lucide-react icons and framer-motion animations to ensure proper installation"
+          },
+          {
+            "id": 3,
+            "title": "Configure Tailwind CSS with custom theme",
+            "description": "Customize tailwind.config.js with portfolio-specific colors, typography, and responsive breakpoints for optimal design flexibility",
+            "dependencies": [
+              2
+            ],
+            "details": "Edit tailwind.config.js to add custom colors (primary, secondary, accent), extend font families for branding, configure responsive breakpoints (sm: 640px, md: 768px, lg: 1024px, xl: 1280px, 2xl: 1536px), and add custom animations. Include dark mode support with 'class' strategy",
+            "status": "done",
+            "testStrategy": "Create a test page with elements using custom colors and breakpoints to verify Tailwind configuration"
+          },
+          {
+            "id": 4,
+            "title": "Set up project folder structure",
+            "description": "Create organized folder structure following Next.js App Router conventions for components, utilities, and assets",
+            "dependencies": [
+              2
+            ],
+            "details": "Create the following directories: /app (already exists), /components (for reusable UI components), /lib (for utility functions and helpers), /public (for static assets). Within /components, create subdirectories: /ui (basic components), /sections (page sections), /layout (layout components). Add .gitkeep files to empty directories",
+            "status": "done",
+            "testStrategy": "Verify folder structure using 'tree' command or file explorer, ensure all directories are properly created"
+          },
+          {
+            "id": 5,
+            "title": "Configure environment and Next.js settings",
+            "description": "Set up environment variables file and optimize Next.js configuration for performance and image handling",
+            "dependencies": [
+              2
+            ],
+            "details": "Create .env.local file with placeholder variables (NEXT_PUBLIC_SITE_URL, contact form API keys if needed). Configure next.config.js to include: image optimization settings with allowed domains, performance optimizations (swcMinify: true), and proper TypeScript/ESLint configurations. Add .env.local to .gitignore if not already present",
+            "status": "done",
+            "testStrategy": "Test environment variable access in a component using process.env, verify Next.js config by checking build output and image optimization"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Create Responsive Layout Components",
+        "description": "Build reusable layout components including header, footer, and navigation with mobile-first responsive design",
+        "details": "Create components/Layout.tsx as main wrapper component\nImplement Header.tsx with responsive navigation menu using Tailwind's mobile-first approach\nBuild Footer.tsx with contact links and copyright\nCreate NavigationMenu.tsx with mobile hamburger menu\nImplement smooth scroll behavior for section navigation\nUse Tailwind classes: container mx-auto px-4, responsive breakpoints sm:, md:, lg:\nAdd subtle hover animations using Tailwind's transition classes",
+        "testStrategy": "Test responsive behavior at breakpoints: 320px, 768px, 1024px, 1440px\nVerify navigation menu toggles correctly on mobile\nEnsure all interactive elements have proper hover/focus states\nTest keyboard navigation accessibility",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Build About Me Section",
+        "description": "Create the About Me section with professional bio and contact links",
+        "details": "Create components/AboutSection.tsx\nImplement clean card-based layout with proper spacing\nAdd professional bio paragraph focusing on DevOps philosophy\nIntegrate LinkedIn and Email contact links with Lucide icons\nUse Tailwind's prose class for optimal text readability\nAdd subtle box shadow and hover effects\nImplement intersection observer for scroll-triggered animations",
+        "testStrategy": "Verify contact links open in new tabs with rel='noopener noreferrer'\nTest text readability on different screen sizes\nEnsure proper spacing and alignment across devices\nValidate email link format (mailto:)",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Develop Skills Section with Categorized Display",
+        "description": "Create an organized skills section with categories and optional icons/badges for technical competencies",
+        "details": "Create components/SkillsSection.tsx with category-based layout\nDefine skill categories: Cloud, Container & Platform, CI/CD, Observability, Scripting, DevSecOps\nImplement SkillCard component for consistent styling\nOptionally integrate technology icons from react-icons or custom SVGs\nUse grid layout: grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3\nAdd hover effects to highlight skill cards\nImplement badge-style display for individual technologies",
+        "testStrategy": "Verify grid layout responds correctly to screen size changes\nTest icon loading and fallback behavior\nEnsure all skill categories are properly displayed\nValidate accessibility with screen readers",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Create Recent Works Projects Gallery",
+        "description": "Build a showcase section for selected projects with descriptions and tech stacks",
+        "details": "Create components/ProjectsSection.tsx and ProjectCard.tsx\nImplement data structure for projects: {title, description, techStack[], link?}\nUse CSS Grid or Flexbox for responsive project cards\nAdd tech stack badges using Tailwind's inline-flex and rounded styles\nImplement hover effects to reveal more details\nAdd optional project links or GitHub icons\nCreate smooth transitions between project cards",
+        "testStrategy": "Test project card layout on various screen sizes\nVerify all project data displays correctly\nEnsure tech stack badges wrap properly on smaller screens\nTest any external links open correctly",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Implement Recent Articles Section",
+        "description": "Create a section to showcase technical articles from Medium with proper linking",
+        "details": "Create components/ArticlesSection.tsx\nImplement article preview cards with title, excerpt, and date\nAdd 'Read on Medium' links with external link icons\nUse consistent card styling with projects section\nImplement loading states for potential future API integration\nAdd publication date formatting\nInclude view all articles link to Medium profile",
+        "testStrategy": "Verify all Medium links open in new tabs\nTest article card responsiveness\nEnsure proper date formatting\nValidate link accessibility and hover states",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Add SEO and Performance Optimizations",
+        "description": "Implement SEO meta tags, sitemap generation, and performance optimizations for better search visibility",
+        "details": "Configure metadata in app/layout.tsx with proper title, description, OG tags\nImplement generateMetadata for dynamic pages\nCreate robots.txt and sitemap.xml\nOptimize images with next/image component\nImplement lazy loading for below-fold content\nAdd structured data (JSON-LD) for better SEO\nConfigure proper canonical URLs\nImplement web vitals monitoring",
+        "testStrategy": "Use Google PageSpeed Insights to verify performance scores\nTest meta tags with social media preview tools\nValidate sitemap.xml format\nCheck Core Web Vitals metrics\nVerify proper image optimization",
+        "priority": "high",
+        "dependencies": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "Configure Vercel Deployment and Custom Domain",
+        "description": "Set up automated deployment to Vercel with custom domain configuration",
+        "details": "Connect GitHub repository to Vercel\nConfigure build settings and environment variables\nSet up custom domain (brandon-t.xyz) with DNS configuration\nImplement preview deployments for pull requests\nConfigure production branch protection\nSet up deployment notifications\nAdd analytics tracking (Vercel Analytics)\nImplement error monitoring",
+        "testStrategy": "Verify successful deployment to Vercel\nTest custom domain resolution and SSL certificate\nCheck preview deployment functionality\nValidate environment variable usage\nTest deployment rollback capability",
+        "priority": "high",
+        "dependencies": [
+          8
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Connect GitHub Repository to Vercel",
+            "description": "Set up initial Vercel project and connect it to the GitHub repository for automated deployments",
+            "dependencies": [],
+            "details": "Create a new Vercel project through the dashboard or CLI. Import the GitHub repository and authorize Vercel to access it. Select the correct framework preset (Next.js) and configure the root directory if needed. Ensure the main/master branch is set as the production branch.",
+            "status": "pending",
+            "testStrategy": "Verify GitHub webhook is created and test with a small commit to trigger deployment"
+          },
+          {
+            "id": 2,
+            "title": "Configure Build Settings and Environment Variables",
+            "description": "Set up proper build configuration and add all required environment variables for the application",
+            "dependencies": [
+              1
+            ],
+            "details": "Configure build command (npm run build or yarn build), output directory (out or .next), and install command. Add all environment variables from .env.example to Vercel project settings. Set up different environment variables for development, preview, and production environments if needed. Configure Node.js version if required.",
+            "status": "pending",
+            "testStrategy": "Trigger a manual deployment and verify build logs show correct commands and environment variables are loaded"
+          },
+          {
+            "id": 3,
+            "title": "Set Up Custom Domain with DNS Configuration",
+            "description": "Configure brandon-t.xyz domain to point to Vercel deployment with proper DNS settings",
+            "dependencies": [
+              1
+            ],
+            "details": "Add brandon-t.xyz as a custom domain in Vercel project settings. Configure DNS records at domain registrar: Add CNAME record for www subdomain pointing to cname.vercel-dns.com. Add A record for apex domain pointing to Vercel's IP (76.76.21.21). Enable HTTPS and configure SSL certificate. Set up domain redirects if needed (www to non-www or vice versa).",
+            "status": "pending",
+            "testStrategy": "Use DNS lookup tools to verify records propagation and test domain accessibility with HTTPS"
+          },
+          {
+            "id": 4,
+            "title": "Implement Preview Deployments and Branch Protection",
+            "description": "Configure automated preview deployments for pull requests and set up production branch protection rules",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "Enable preview deployments in Vercel project settings for all pull requests. Configure preview URL pattern if needed. Set up GitHub branch protection rules for main/master branch: require pull request reviews, enable status checks for Vercel deployments, disable direct pushes. Configure deployment notifications through Vercel integrations (Slack, email, or GitHub comments). Set up deployment protection for production environment if needed.",
+            "status": "pending",
+            "testStrategy": "Create a test pull request and verify preview deployment is created with unique URL and comments are posted"
+          },
+          {
+            "id": 5,
+            "title": "Add Analytics and Error Monitoring",
+            "description": "Implement Vercel Analytics for performance monitoring and set up error tracking for production issues",
+            "dependencies": [
+              1,
+              2,
+              3
+            ],
+            "details": "Enable Vercel Analytics in project dashboard and add @vercel/analytics package to the project. Import and initialize analytics in _app.tsx or layout.tsx with Analytics component. Configure Web Vitals tracking and custom events if needed. Set up Vercel Speed Insights for performance monitoring. Implement error monitoring using Vercel's built-in error tracking or integrate with third-party service like Sentry. Add error boundary components and configure source maps for better debugging.",
+            "status": "pending",
+            "testStrategy": "Deploy to production and verify analytics data appears in Vercel dashboard, trigger test errors to confirm monitoring"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Create Documentation and Final Polish",
+        "description": "Write comprehensive README, add Apache license, and perform final UI/UX refinements",
+        "details": "Create detailed README.md with setup instructions, tech stack, and deployment guide\nAdd LICENSE file with Apache 2.0 license\nImplement 404 error page with navigation back to home\nAdd loading states and error boundaries\nPerform cross-browser testing (Chrome, Firefox, Safari, Edge)\nImplement print styles for resume-like viewing\nAdd subtle micro-interactions and polish animations\nCreate CONTRIBUTING.md for future contributions",
+        "testStrategy": "Verify README instructions work for fresh setup\nTest 404 page functionality\nValidate cross-browser compatibility\nEnsure all interactive elements have proper feedback\nTest print layout for professional appearance",
+        "priority": "medium",
+        "dependencies": [
+          9
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-07-02T09:53:10.233Z",
+      "updated": "2025-07-03T13:41:21.985Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+# Task ID: 1
+# Title: Initialize Next.js Project with TypeScript and Tailwind CSS
+# Status: in-progress
+# Dependencies: None
+# Priority: high
+# Description: Set up the Next.js project foundation with TypeScript support, Tailwind CSS for styling, and essential development configurations
+# Details:
+Execute: npx create-next-app@latest portfolio-brandon --typescript --tailwind --app
+Install additional dependencies: npm install lucide-react framer-motion
+Configure tailwind.config.js with custom theme colors and responsive breakpoints
+Set up project structure: /app, /components, /lib, /public folders
+Create .env.local for environment variables
+Configure next.config.js for optimized images and performance
+
+# Test Strategy:
+Verify successful project initialization by running npm run dev and checking localhost:3000
+Ensure Tailwind CSS is working by adding test classes
+Confirm TypeScript compilation with npm run build
+
+# Subtasks:
+## 1. Create Next.js project with TypeScript and Tailwind [done]
+### Dependencies: None
+### Description: Initialize a new Next.js 14+ project using create-next-app with TypeScript and Tailwind CSS pre-configured, using the App Router architecture
+### Details:
+Run 'npx create-next-app@latest portfolio-brandon --typescript --tailwind --app' and select the following options: Would you like to use ESLint? → Yes, Would you like to use `src/` directory? → No, Would you like to use experimental app/ directory? → Yes, Would you like to customize the default import alias? → No
+
+## 2. Install and configure additional dependencies [pending]
+### Dependencies: None
+### Description: Install lucide-react for icons and framer-motion for animations, ensuring compatibility with the Next.js App Router
+### Details:
+Navigate to the project directory and run 'npm install lucide-react framer-motion'. Verify installation by checking package.json for the new dependencies. Create a components/providers.tsx file to wrap framer-motion components for client-side rendering compatibility
+
+## 3. Configure Tailwind CSS with custom theme [pending]
+### Dependencies: 1.2
+### Description: Customize tailwind.config.js with portfolio-specific colors, typography, and responsive breakpoints for optimal design flexibility
+### Details:
+Edit tailwind.config.js to add custom colors (primary, secondary, accent), extend font families for branding, configure responsive breakpoints (sm: 640px, md: 768px, lg: 1024px, xl: 1280px, 2xl: 1536px), and add custom animations. Include dark mode support with 'class' strategy
+
+## 4. Set up project folder structure [pending]
+### Dependencies: 1.2
+### Description: Create organized folder structure following Next.js App Router conventions for components, utilities, and assets
+### Details:
+Create the following directories: /app (already exists), /components (for reusable UI components), /lib (for utility functions and helpers), /public (for static assets). Within /components, create subdirectories: /ui (basic components), /sections (page sections), /layout (layout components). Add .gitkeep files to empty directories
+
+## 5. Configure environment and Next.js settings [pending]
+### Dependencies: 1.2
+### Description: Set up environment variables file and optimize Next.js configuration for performance and image handling
+### Details:
+Create .env.local file with placeholder variables (NEXT_PUBLIC_SITE_URL, contact form API keys if needed). Configure next.config.js to include: image optimization settings with allowed domains, performance optimizations (swcMinify: true), and proper TypeScript/ESLint configurations. Add .env.local to .gitignore if not already present
+

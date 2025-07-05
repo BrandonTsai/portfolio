@@ -1,0 +1,20 @@
+# Task ID: 7
+# Title: Implement Recent Articles Section
+# Status: pending
+# Dependencies: 2
+# Priority: medium
+# Description: Create a section to showcase technical articles from Medium with proper linking
+# Details:
+Create components/ArticlesSection.tsx
+Implement article preview cards with title, excerpt, and date
+Add 'Read on Medium' links with external link icons
+Use consistent card styling with projects section
+Implement loading states for potential future API integration
+Add publication date formatting
+Include view all articles link to Medium profile
+
+# Test Strategy:
+Verify all Medium links open in new tabs
+Test article card responsiveness
+Ensure proper date formatting
+Validate link accessibility and hover states

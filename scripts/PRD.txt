@@ -1,0 +1,79 @@
+<context>
+# Overview  
+
+Create a clean, responsive, and personal portfolio website for Brandon Tsai, a platform engineer specializing in cloud infrastructure, Kubernetes, and DevOps. 
+The design and structure will be inspired by https://mattfarley.ca/, with a professional tone and technical credibility. 
+The site will showcase his self-introduction, skills, selected project highlights ("Recent Works"), and technical writing ("Recent Articles").
+
+## Slogan / Vision:
+Crafting resilient infrastructure and delivering services without compromise.
+
+## Key Goals:
+- Clearly introduce Brandon as a senior cloud/platform/DevOps engineer.
+- Present technical skills in a categorized and visual way.
+- Showcase selected works with concise summaries and technologies used.
+- Display the link to his technical articles.
+- Deploy to Vercel with a clean domain (e.g., brandon-t.xyz).
+
+## Sections:
+
+### Sections 1. Slogan (Home)
+- Title: "Brandon Tsai – Senior Platform Engineer"
+- Slogan: "Crafting resilient infrastructure and delivering services without compromise."
+
+### Sections 2. About Me
+- Brief personal intro: 10 sentences about who Brandon is and what he specializes in.
+
+### Sections 3. Skills
+- Categorized by:
+  - Cloud: AWS (EC2, Lambda, EKS, RDS, S3), Azure
+  - Container & Platform: Docker, Podman, Kubernetes, OpenShift
+  - CI/CD: GitLab CI, Jenkins, ArgoCD
+  - Observability: Splunk, OpenTelemetry, Prometheus
+  - Scripting: Bash, Python, Go
+  - DevSecOps: Clair, Trivy, AquaSec
+- Optionally use icons or badges.
+
+### Sections 4. Recent Works/Projects
+- Each work includes:
+  - Title
+  - Description (2–3 lines)
+  - Key tech stack used
+
+### Sections 5. Recent Articles
+- These technical articles are published in Medium
+- Provide the link to these articles.
+
+
+</context>
+
+<PRD>
+
+# Technical Architecture  
+- Next.js (preferred)
+- Tailwind CSS
+- Icons: Lucide or Heroicons
+- Hosting: Vercel
+
+## Design Requirements:
+- Simple and clean layout
+- Mobile-first responsive design
+- Light/dark mode optional
+- Use subtle animation (Framer Motion is okay)
+- Good spacing, large readable font, clean hierarchy
+- Inspired by mattfarley.ca's clarity, tone, and format
+
+## Deliverables:
+- Landing website with responsive UI
+- 5 structured sections as listed
+- Hosted and accessible via public URL
+- GitHub repo with Apache license
+- Sitemap and SEO meta tags
+- README with setup instructions
+
+## Timeline Estimate:
+- Day 1–2: Project scaffold, structure, and Tailwind setup
+- Day 3–5: Content population and styling
+- Day 6–7: Deploy, test, polish, and write articles
+
+</PRD>

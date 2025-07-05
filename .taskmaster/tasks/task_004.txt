@@ -1,0 +1,20 @@
+# Task ID: 4
+# Title: Build About Me Section
+# Status: pending
+# Dependencies: 2
+# Priority: medium
+# Description: Create the About Me section with professional bio and contact links
+# Details:
+Create components/AboutSection.tsx
+Implement clean card-based layout with proper spacing
+Add professional bio paragraph focusing on DevOps philosophy
+Integrate LinkedIn and Email contact links with Lucide icons
+Use Tailwind's prose class for optimal text readability
+Add subtle box shadow and hover effects
+Implement intersection observer for scroll-triggered animations
+
+# Test Strategy:
+Verify contact links open in new tabs with rel='noopener noreferrer'
+Test text readability on different screen sizes
+Ensure proper spacing and alignment across devices
+Validate email link format (mailto:)

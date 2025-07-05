@@ -1,0 +1,20 @@
+# Task ID: 6
+# Title: Create Recent Works Projects Gallery
+# Status: pending
+# Dependencies: 2
+# Priority: medium
+# Description: Build a showcase section for selected projects with descriptions and tech stacks
+# Details:
+Create components/ProjectsSection.tsx and ProjectCard.tsx
+Implement data structure for projects: {title, description, techStack[], link?}
+Use CSS Grid or Flexbox for responsive project cards
+Add tech stack badges using Tailwind's inline-flex and rounded styles
+Implement hover effects to reveal more details
+Add optional project links or GitHub icons
+Create smooth transitions between project cards
+
+# Test Strategy:
+Test project card layout on various screen sizes
+Verify all project data displays correctly
+Ensure tech stack badges wrap properly on smaller screens
+Test any external links open correctly

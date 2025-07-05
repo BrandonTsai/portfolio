@@ -1,0 +1,22 @@
+# Task ID: 8
+# Title: Add SEO and Performance Optimizations
+# Status: pending
+# Dependencies: 3, 4, 5, 6, 7
+# Priority: high
+# Description: Implement SEO meta tags, sitemap generation, and performance optimizations for better search visibility
+# Details:
+Configure metadata in app/layout.tsx with proper title, description, OG tags
+Implement generateMetadata for dynamic pages
+Create robots.txt and sitemap.xml
+Optimize images with next/image component
+Implement lazy loading for below-fold content
+Add structured data (JSON-LD) for better SEO
+Configure proper canonical URLs
+Implement web vitals monitoring
+
+# Test Strategy:
+Use Google PageSpeed Insights to verify performance scores
+Test meta tags with social media preview tools
+Validate sitemap.xml format
+Check Core Web Vitals metrics
+Verify proper image optimization
