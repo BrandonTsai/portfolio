@@ -8,7 +8,7 @@ export default function Home() {
       <Header />
       <main className="flex flex-col items-center min-h-screen p-0 sm:p-0 gap-0 font-[family-name:var(--font-geist-sans)] w-full">
         {/* Slogan (Home) Section */}
-        <section id="home" className="w-full flex flex-col items-center text-center gap-6 pt-12 pb-16 bg-white dark:bg-black animate-fadeIn">
+        <section id="home" className="w-full flex flex-col items-center text-center gap-6 pt-12 pb-16 bg-white animate-fadeIn">
           <h1 className="text-4xl sm:text-5xl font-bold">Brandon Tsai</h1>
           <h2 className="text-3xl sm:text-4xl font-bold">~ Senior Platform Engineer ~</h2>
           <p className="text-xl text-gray-700 dark:text-gray-200 font-medium">Crafting resilient infrastructure and delivering services without compromise.</p>
@@ -37,7 +37,7 @@ export default function Home() {
         </section>
         <div className="w-full h-0.5 bg-gray-200 dark:bg-gray-800" />
         {/* Skills Section */}
-        <section id="skills" className="w-full py-16 bg-white dark:bg-black animate-fadeIn">
+        <section id="skills" className="w-full py-16 bg-white animate-fadeIn">
           <div className="max-w-3xl mx-auto flex flex-col gap-6 px-4">
             <h2 className="text-2xl font-semibold mb-2">Skills</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -86,7 +86,7 @@ export default function Home() {
         </section>
         <div className="w-full h-0.5 bg-gray-200 dark:bg-gray-800" />
         {/* Recent Works/Projects Section */}
-        <section id="projects" className="w-full py-16 bg-gray-50 dark:bg-gray-900 animate-fadeIn">
+        <section id="projects" className="w-full py-16 bg-gray-100 animate-fadeIn">
           <div className="max-w-3xl mx-auto flex flex-col gap-4 px-4">
             <h2 className="text-2xl font-semibold mb-2">Recent Works / Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -115,7 +115,7 @@ export default function Home() {
         </section>
         <div className="w-full h-0.5 bg-gray-200 dark:bg-gray-800" />
         {/* Recent Articles Section */}
-        <section id="articles" className="w-full py-16 bg-white dark:bg-black animate-fadeIn">
+        <section id="articles" className="w-full py-16 bg-white animate-fadeIn">
           <div className="max-w-2xl mx-auto flex flex-col gap-4 px-4">
             <h2 className="text-2xl font-semibold mb-2">Recent Articles</h2>
             <ul className="list-disc list-inside space-y-2">
