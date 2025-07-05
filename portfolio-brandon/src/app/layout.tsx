@@ -72,12 +72,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// Web Vitals reporting (Next.js will call this automatically if present)
-export function reportWebVitals(metric) {
-  if (metric.label === 'web-vital') {
-    // You can send this data to an analytics endpoint
-    // Example: fetch('/analytics', { method: 'POST', body: JSON.stringify(metric) })
-    console.log(metric);
-  }
-}

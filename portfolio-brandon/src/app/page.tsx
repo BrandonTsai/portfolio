@@ -28,7 +28,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto flex flex-col gap-4 px-4">
             <h2 className="text-2xl font-semibold mb-2">About Me</h2>
             <p>
-              Hi, I'm Brandon, a platform engineer specializing in cloud infrastructure, automation, and developer enablement. I build robust, scalable systems and love empowering teams with DevOps best practices.
+              Hi, I am Brandon, a platform engineer specializing in cloud infrastructure, automation, and developer enablement. I build robust, scalable systems and love empowering teams with DevOps best practices.
             </p>
             <p>
               With a background in platform engineering and a passion for automation, I believe in building systems that are not only resilient but also empower developers to move fast and safely. My approach is rooted in DevOps principles: collaboration, automation, and continuous improvement.
