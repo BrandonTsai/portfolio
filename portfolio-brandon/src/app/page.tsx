@@ -8,10 +8,10 @@ export default function Home() {
       <Header />
       <main className="flex flex-col items-center min-h-screen p-0 sm:p-0 gap-0 font-[family-name:var(--font-geist-sans)] w-full">
         {/* Slogan (Home) Section */}
-        <section id="home" className="w-full flex flex-col items-center text-center gap-6 pt-12 pb-16 bg-white dark:bg-black animate-fadeIn">
+        <section id="home" className="w-full flex flex-col items-center text-center gap-6 pt-12 pb-16 bg-white animate-fadeIn">
           <h1 className="text-4xl sm:text-5xl font-bold">Brandon Tsai</h1>
           <h2 className="text-3xl sm:text-4xl font-bold">~ Senior Platform Engineer ~</h2>
-          <p className="text-xl text-gray-700 dark:text-gray-200 font-medium">Crafting resilient infrastructure and delivering services without compromise.</p>
+          <p className="text-xl text-gray-700 font-medium">Crafting resilient infrastructure and delivering services without compromise.</p>
         </section>
         <div className="w-full flex justify-center bg-transparent">
         <Image
@@ -35,87 +35,87 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <div className="w-full h-0.5 bg-gray-200 dark:bg-gray-800" />
+        <div className="w-full h-0.5 bg-gray-200" />
         {/* Skills Section */}
-        <section id="skills" className="w-full py-16 bg-white dark:bg-black animate-fadeIn">
+        <section id="skills" className="w-full py-16 bg-white animate-fadeIn">
           <div className="max-w-3xl mx-auto flex flex-col gap-6 px-4">
             <h2 className="text-2xl font-semibold mb-2">Skills</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               <div>
                 <h3 className="font-semibold mb-1">Cloud</h3>
-                <ul className="list-disc list-inside text-gray-700 dark:text-gray-200">
+                <ul className="list-disc list-inside text-gray-700">
                   <li>AWS (EC2, Lambda, EKS, RDS, S3)</li>
                   <li>Azure</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Container & Platform</h3>
-                <ul className="list-disc list-inside text-gray-700 dark:text-gray-200">
+                <ul className="list-disc list-inside text-gray-700">
                   <li>Docker, Podman</li>
                   <li>Kubernetes, OpenShift</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-semibold mb-1">CI/CD</h3>
-                <ul className="list-disc list-inside text-gray-700 dark:text-gray-200">
+                <ul className="list-disc list-inside text-gray-700">
                   <li>GitLab CI, Jenkins</li>
                   <li>ArgoCD</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Observability</h3>
-                <ul className="list-disc list-inside text-gray-700 dark:text-gray-200">
+                <ul className="list-disc list-inside text-gray-700">
                   <li>Splunk, OpenTelemetry</li>
                   <li>Prometheus</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Scripting</h3>
-                <ul className="list-disc list-inside text-gray-700 dark:text-gray-200">
+                <ul className="list-disc list-inside text-gray-700">
                   <li>Bash, Python, Go</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-semibold mb-1">DevSecOps</h3>
-                <ul className="list-disc list-inside text-gray-700 dark:text-gray-200">
+                <ul className="list-disc list-inside text-gray-700">
                   <li>Clair, Trivy, AquaSec</li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
-        <div className="w-full h-0.5 bg-gray-200 dark:bg-gray-800" />
+        <div className="w-full h-0.5 bg-gray-200" />
         {/* Recent Works/Projects Section */}
-        <section id="projects" className="w-full py-16 bg-gray-50 dark:bg-gray-900 animate-fadeIn">
+        <section id="projects" className="w-full py-16 bg-gray-50 animate-fadeIn">
           <div className="max-w-3xl mx-auto flex flex-col gap-4 px-4">
             <h2 className="text-2xl font-semibold mb-2">Recent Works / Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="border rounded-lg p-4 bg-white dark:bg-gray-900 shadow-sm">
+              <div className="border rounded-lg p-4 bg-white shadow-sm">
                 <h3 className="font-semibold text-lg mb-1">Cloud Automation Platform</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-1">Developed an internal platform to automate AWS infrastructure provisioning and management for multiple teams.</p>
+                <p className="text-gray-700 mb-1">Developed an internal platform to automate AWS infrastructure provisioning and management for multiple teams.</p>
                 <div className="text-xs text-gray-500">Tech: AWS, Terraform, Python, GitLab CI</div>
               </div>
-              <div className="border rounded-lg p-4 bg-white dark:bg-gray-900 shadow-sm">
+              <div className="border rounded-lg p-4 bg-white shadow-sm">
                 <h3 className="font-semibold text-lg mb-1">Observability Stack Rollout</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-1">Led the rollout of a unified observability stack across microservices, improving incident response and monitoring.</p>
+                <p className="text-gray-700 mb-1">Led the rollout of a unified observability stack across microservices, improving incident response and monitoring.</p>
                 <div className="text-xs text-gray-500">Tech: Prometheus, OpenTelemetry, Splunk, Kubernetes</div>
               </div>
-              <div className="border rounded-lg p-4 bg-white dark:bg-gray-900 shadow-sm">
+              <div className="border rounded-lg p-4 bg-white shadow-sm">
                 <h3 className="font-semibold text-lg mb-1">Secure Container Pipeline</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-1">Implemented a DevSecOps pipeline for container image scanning and policy enforcement in CI/CD workflows.</p>
+                <p className="text-gray-700 mb-1">Implemented a DevSecOps pipeline for container image scanning and policy enforcement in CI/CD workflows.</p>
                 <div className="text-xs text-gray-500">Tech: Docker, Trivy, AquaSec, Jenkins</div>
               </div>
-              <div className="border rounded-lg p-4 bg-white dark:bg-gray-900 shadow-sm">
+              <div className="border rounded-lg p-4 bg-white shadow-sm">
                 <h3 className="font-semibold text-lg mb-1">Developer Enablement Portal</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-1">Built a self-service portal for developers to request and manage cloud resources with automated approvals.</p>
+                <p className="text-gray-700 mb-1">Built a self-service portal for developers to request and manage cloud resources with automated approvals.</p>
                 <div className="text-xs text-gray-500">Tech: React, AWS, ArgoCD</div>
               </div>
             </div>
           </div>
         </section>
-        <div className="w-full h-0.5 bg-gray-200 dark:bg-gray-800" />
+        <div className="w-full h-0.5 bg-gray-200" />
         {/* Recent Articles Section */}
-        <section id="articles" className="w-full py-16 bg-white dark:bg-black animate-fadeIn">
+        <section id="articles" className="w-full py-16 bg-white animate-fadeIn">
           <div className="max-w-2xl mx-auto flex flex-col gap-4 px-4">
             <h2 className="text-2xl font-semibold mb-2">Recent Articles</h2>
             <ul className="list-disc list-inside space-y-2">
@@ -137,7 +137,7 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        <div className="w-full h-0.5 bg-gray-200 dark:bg-gray-800" />
+        <div className="w-full h-0.5 bg-gray-200" />
         {/* Contact Section (CTA) */}
         <section id="contact" className="w-full py-16 bg-gradient-to-b from-[#ff9800] to-[#b85c00] text-white animate-fadeIn">
           <div className="max-w-2xl mx-auto flex flex-col gap-4 px-4">
