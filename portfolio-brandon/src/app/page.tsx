@@ -67,7 +67,7 @@ export default function Home() {
                   <li>Docker, Podman</li>
                   <li>RedHat Quay, AWS ECR</li>
                   <li>Kubernetes, OpenShift</li>
-                  <li>Helm</li>
+                  <li>Helm, Kustomize</li>
                 </ul>
               </div>
               <div>
