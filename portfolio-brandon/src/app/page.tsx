@@ -136,18 +136,18 @@ export default function Home() {
             <h2 className="text-2xl font-semibold mb-2">Recent Articles</h2>
             <ul className="list-disc list-inside space-y-2">
               <li>
-                <a href="https://medium.com/@brandon-tsai/cloud-automation-best-practices" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                  Cloud Automation Best Practices
+                <a href="https://darumatic.com/blog/secure_openshift" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                OpenShift: Secure OpenShift with Kube-bench and Falco
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@brandon-tsai/devsecops-pipeline-integration" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                  Integrating DevSecOps into Your CI/CD Pipeline
+                <a href="https://darumatic.com/blog/k8s-network-policy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                Enhance Kubernetes cluster with NetworkPolicy
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@brandon-tsai/observability-for-microservices" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                  Observability for Modern Microservices
+                <a href="https://darumatic.com/blog/improve_kubectl_command_with_krew" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                Improve Kubectl Command with Krew
                 </a>
               </li>
             </ul>
