@@ -42,7 +42,7 @@ export default function Home() {
             Hi, I am Brandon. With a decade of experience in platform engineering, I believe in building systems that are not only resilient but also empower developers to move fast and with confidence. My entire approach is rooted in DevOps principles: deep collaboration, relentless automation, and a commitment to continuous improvement.
             </p>
             <p>
-            I have successfully delivered scalable solutions across industries, from government agencies to financial institutions, and thrive in high-impact, high-ownership environments. Whether building GitOps pipelines, deploying secure container platforms, or streamlining developer workflows, I bring clarity, precision, and purpose to every project. My mission is simple: build platforms that enable innovation without compromise.
+            I have successfully delivered scalable solutions across industries, from world\'s largest manufacturer company to financial institutions, and thrive in high-impact, high-ownership environments. Whether building GitOps pipelines, deploying secure container platforms, or streamlining developer workflows, I bring clarity, precision, and purpose to every project. My mission is simple: build platforms that enable innovation without compromise.
             </p>
           </div>
         </section>
