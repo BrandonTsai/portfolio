@@ -65,6 +65,7 @@ export default function Home() {
                 <h3 className="font-semibold mb-1">Container & Platform</h3>
                 <ul className="list-disc list-inside text-gray-700">
                   <li>Docker, Podman</li>
+                  <li>RedHat Quay, AWS ECR</li>
                   <li>Kubernetes, OpenShift</li>
                   <li>Helm</li>
                 </ul>
