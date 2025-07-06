@@ -55,10 +55,9 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold mb-1">Cloud</h3>
                 <ul className="list-disc list-inside text-gray-700">
-                  <li>AWS</li>
-                  <li>Azure</li>
-                  <li>Private cloud across multiple regions</li>
+                  <li>AWS, Azure</li>
                   <li>OpenStack</li>
+                  <li>Private cloud across multiple regions</li>
                 </ul>
               </div>
               <div>
