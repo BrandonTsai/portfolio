@@ -55,8 +55,10 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold mb-1">Cloud</h3>
                 <ul className="list-disc list-inside text-gray-700">
-                  <li>AWS (EC2, Lambda, EKS, RDS, S3)</li>
+                  <li>AWS</li>
                   <li>Azure</li>
+                  <li>Private cloud across multiple regions</li>
+                  <li>OpenStack</li>
                 </ul>
               </div>
               <div>
@@ -64,32 +66,35 @@ export default function Home() {
                 <ul className="list-disc list-inside text-gray-700">
                   <li>Docker, Podman</li>
                   <li>Kubernetes, OpenShift</li>
+                  <li>Helm</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-semibold mb-1">CI/CD</h3>
                 <ul className="list-disc list-inside text-gray-700">
-                  <li>GitLab CI, Jenkins</li>
-                  <li>ArgoCD</li>
+                  <li>Jenkins, GitLab CI </li>
+                  <li>GitOps, ArgoCD</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Observability</h3>
                 <ul className="list-disc list-inside text-gray-700">
                   <li>Splunk, OpenTelemetry</li>
-                  <li>Prometheus</li>
+                  <li>Prometheus, Grafana</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold mb-1">Scripting</h3>
+                <h3 className="font-semibold mb-1">Infrastructure as Code</h3>
                 <ul className="list-disc list-inside text-gray-700">
-                  <li>Bash, Python, Go</li>
+                  <li>Ansible, Terraform, CloudFormation</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold mb-1">DevSecOps</h3>
+                <h3 className="font-semibold mb-1">Security</h3>
                 <ul className="list-disc list-inside text-gray-700">
-                  <li>Clair, Trivy, AquaSec</li>
+                  <li>Sealed Secrets</li>
+                  <li>Trivy, AquaSec</li>
+                  <li>NexusRM, NexusIQ, SonarQube</li>
                 </ul>
               </div>
             </div>
