@@ -6,12 +6,23 @@ export default function Home() {
   return (
     <>
       <Header />
+      {/* Bighead Image above Slogan */}
+      <div className="w-full flex justify-center bg-white pt-8">
+        <Image
+          src="/portfolio_bighead.png"
+          alt="Brandon Tsai Bighead"
+          width={180}
+          height={180}
+          className="rounded-full shadow-lg border-4 border-[#ff9800] object-cover"
+          priority
+        />
+      </div>
       <main className="flex flex-col items-center min-h-screen p-0 sm:p-0 gap-0 font-[family-name:var(--font-geist-sans)] w-full">
         {/* Slogan (Home) Section */}
         <section id="home" className="w-full flex flex-col items-center text-center gap-6 pt-12 pb-16 bg-white animate-fadeIn">
           <h1 className="text-4xl sm:text-5xl font-bold">Brandon Tsai</h1>
           <h2 className="text-3xl sm:text-4xl font-bold">~ Senior Platform Engineer ~</h2>
-          <p className="text-xl text-gray-700 font-medium">Crafting resilient infrastructure and delivering services without compromise.</p>
+          <p className="text-xl text-gray-700 font-medium">Crafting resilient infrastructure without compromise.</p>
         </section>
         <div className="w-full flex justify-center bg-transparent">
         <Image
