@@ -70,10 +70,11 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold mb-1">CI/CD</h3>
+                <h3 className="font-semibold mb-1">Security</h3>
                 <ul className="list-disc list-inside text-gray-700">
-                  <li>Jenkins, GitLab CI </li>
-                  <li>GitOps, ArgoCD</li>
+                  <li>Sealed Secrets</li>
+                  <li>Trivy, AquaSec</li>
+                  <li>NexusRM, NexusIQ, SonarQube</li>
                 </ul>
               </div>
               <div>
@@ -90,11 +91,10 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold mb-1">Security</h3>
+                <h3 className="font-semibold mb-1">CI/CD</h3>
                 <ul className="list-disc list-inside text-gray-700">
-                  <li>Sealed Secrets</li>
-                  <li>Trivy, AquaSec</li>
-                  <li>NexusRM, NexusIQ, SonarQube</li>
+                  <li>Jenkins, GitLab CI </li>
+                  <li>GitOps, ArgoCD</li>
                 </ul>
               </div>
             </div>
